@@ -1,8 +1,11 @@
-<html>
+<html lang="en">
  <head>
-  <title>
-   Coffee Shop
-  </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Coffee Shop. Enjoy our finest brews. Established in 2016.">
+  <meta name="keywords" content="coffee, coffee shop, best coffee, local coffee, established 2016">
+  <meta name="author" content="Coffee Shop">
+  <title>Coffee Shop</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
   <style>
    body, html {
@@ -19,6 +22,7 @@
         }
         .header img {
             height: 50px;
+            width: auto;
         }
         .menu-icon {
             position: absolute;
@@ -48,6 +52,7 @@
         }
         .buttons {
             display: flex;
+            flex-direction: column;
             gap: 20px;
             margin-bottom: 30px;
         }
@@ -72,49 +77,45 @@
             font-size: 24px;
             text-decoration: none;
         }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 36px;
+            }
+            .buttons {
+                flex-direction: column;
+            }
+            .button {
+                font-size: 14px;
+                padding: 8px 16px;
+            }
+            .menu-icon {
+                font-size: 20px;
+            }
+        }
   </style>
  </head>
  <body>
   <div class="header">
-   <img alt="Coffee Shop Logo" height="50" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-NS8m4WEON9tapTDL4yqH9K4s.png?st=2024-09-15T03%3A10%3A50Z&amp;se=2024-09-15T05%3A10%3A50Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-14T23%3A31%3A57Z&amp;ske=2024-09-15T23%3A31%3A57Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=/6YzJzzQE18sgsXpHyKBaUvmmyrfsiHBHEAW7FK00Ws%3D" width="100"/>
-   <i class="fas fa-bars menu-icon">
-   </i>
+   <img alt="Coffee Shop Logo - Freshest Coffee since 2016" src="https://oaidalleapiprodscus.blob.core.windows.net/private/org-BVbpSZmLndA7MfHIxv2ahIKS/user-IBY8IaMXtVn7IVIdZeyvjx16/img-NS8m4WEON9tapTDL4yqH9K4s.png?st=2024-09-15T03%3A10%3A50Z&amp;se=2024-09-15T05%3A10%3A50Z&amp;sp=r&amp;sv=2024-08-04&amp;sr=b&amp;rscd=inline&amp;rsct=image/png&amp;skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&amp;sktid=a48cca56-e6da-484e-a814-9c849652bcb3&amp;skt=2024-09-14T23%3A31%3A57Z&amp;ske=2024-09-15T23%3A31%3A57Z&amp;sks=b&amp;skv=2024-08-04&amp;sig=/6YzJzzQE18sgsXpHyKBaUvmmyrfsiHBHEAW7FK00Ws%3D" />
+   <i class="fas fa-bars menu-icon" aria-label="Menu Icon"></i>
   </div>
   <div class="background">
-   <div class="logo">
-    Coffee
-   </div>
+   <div class="logo">Coffee</div>
    <div class="subtext">
-    THE PEOPLE VS
-    <br/>
-    EST. 2016
+    THE PEOPLE VS<br/>EST. 2016
    </div>
    <div class="buttons">
-    <a class="button" href="#">
-     CALL NOW
-    </a>
-    <a class="button" href="#">
-     EMAIL NOW
-    </a>
+    <a class="button" href="#" aria-label="Call us now">CALL NOW</a>
+    <a class="button" href="#" aria-label="Email us now">EMAIL NOW</a>
    </div>
   </div>
   <div class="social-icons">
-   <a href="#">
-    <i class="fab fa-facebook-f">
-    </i>
-   </a>
-   <a href="#">
-    <i class="fab fa-instagram">
-    </i>
-   </a>
-   <a href="#">
-    <i class="fas fa-phone">
-    </i>
-   </a>
-   <a href="#">
-    <i class="fas fa-envelope">
-    </i>
-   </a>
+   <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+   <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+   <a href="#" aria-label="Phone"><i class="fas fa-phone"></i></a>
+   <a href="#" aria-label="Email"><i class="fas fa-envelope"></i></a>
   </div>
  </body>
 </html>
